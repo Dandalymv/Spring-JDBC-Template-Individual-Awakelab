@@ -18,23 +18,25 @@ USE `servlet_grupal`;
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
--- Table structure for table `capacitacion`
+-- Table structure for table `oficinas`
 --
 
-DROP TABLE IF EXISTS `capacitacion`;
+DROP TABLE IF EXISTS `oficinas`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
-CREATE TABLE `capacitacion` (
-  `id` int NOT NULL AUTO_INCREMENT,
-  `rut_cliente` varchar(45) DEFAULT NULL,
-  `dia` varchar(45) DEFAULT NULL,
-  `hora` varchar(45) DEFAULT NULL,
-  `lugar` varchar(45) DEFAULT NULL,
-  `duracion` varchar(45) DEFAULT NULL,
-  `cantidad_asistentes` int DEFAULT NULL,
-  `nombreCliente` varchar(45) DEFAULT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=13 DEFAULT CHARSET=utf8mb3;
+CREATE TABLE `oficinas` (
+  `idoficinas` int NOT NULL AUTO_INCREMENT,
+  `nombre_oficina` varchar(45) DEFAULT NULL,
+  `direccion` varchar(45) DEFAULT NULL,
+  `comuna` varchar(45) DEFAULT NULL,
+  `region` varchar(52) DEFAULT NULL,
+  `telefono` varchar(45) DEFAULT NULL,
+  `correo` varchar(45) DEFAULT NULL,
+  `espacios` varchar(45) DEFAULT NULL,
+  `horario` varchar(45) DEFAULT NULL,
+  `valor` varchar(45) DEFAULT NULL,
+  PRIMARY KEY (`idoficinas`)
+) ENGINE=InnoDB AUTO_INCREMENT=18 DEFAULT CHARSET=utf8mb3;
 /*!40101 SET character_set_client = @saved_cs_client */;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
@@ -45,3 +47,6 @@ CREATE TABLE `capacitacion` (
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+
+-- Dump completed on 2021-12-10 12:06:28
+
